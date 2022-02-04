@@ -241,7 +241,7 @@ server <- function(input, output) {
     )
     plot2<- ggplotly(ggplot(izona_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var1))+
+      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -259,7 +259,7 @@ server <- function(input, output) {
     )
     plot3<- ggplotly(ggplot(ozona, aes(x=datetime, y=yvar))+
       geom_point(color = "red")+
-      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var1))+
+      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -277,7 +277,7 @@ server <- function(input, output) {
     )
     plot4<- ggplotly(ggplot(izona, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var1))+
+      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -334,7 +334,7 @@ server <- function(input, output) {
     )
     plot6<- ggplotly(ggplot(iestrella_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var1))+
+      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -352,7 +352,7 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(oestrella, aes(x=datetime, y=yvar))+
       geom_point(color = "red")+
-      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var1))+
+      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -370,7 +370,7 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(iestrella, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var1))+
+      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
