@@ -121,25 +121,25 @@ ui <-
                             tabPanel("Time Series Plots", br(),
                                      sidebarLayout(
                                        sidebarPanel(
-                                         selectInput("var1", 
+                                         selectInput("var1a", 
                                                      label = "Plot A",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
-                                         selectInput("var2", 
+                                         selectInput("var2a", 
                                                      label = "Plot B",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
-                                         selectInput("var3", 
+                                         selectInput("var3a", 
                                                      label = "Plot C",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
-                                         selectInput("var4", 
+                                         selectInput("var4a", 
                                                      label = "Plot D",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
@@ -306,7 +306,7 @@ server <- function(input, output) {
     iestrella_hr
   })
   output$plot2a <- renderPlotly({
-    yvar <- switch(input$var1,
+    yvar <- switch(input$var1a,
                    "PM10 (ug/m^3)" = oestrella_hr$p1,
                    "PM2.5 (ug/m^3)" = oestrella_hr$p2,
                    "AQI (US AQI)" = oestrella_hr$p01,
@@ -316,15 +316,15 @@ server <- function(input, output) {
     )
     plot5<- ggplotly(ggplot(oestrella_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot A: ", "Hourly Outdoor ", input$var1))+
-      ylab(paste0(input$var1))+
+      ggtitle(paste0("Plot A: ", "Hourly Outdoor ", input$var1a))+
+      ylab(paste0(input$var1a))+
       xlab("Datetime")+
       theme_minimal()+ 
       theme(plot.title = element_text(face = "bold", size = 18))+
       theme(axis.text=element_text(size=14),axis.title=element_text(size=14,face="bold")))
   })
   output$plot2b <- renderPlotly({
-    yvar <- switch(input$var2,
+    yvar <- switch(input$var2a,
                    "PM10 (ug/m^3)" = iestrella_hr$p1,
                    "PM2.5 (ug/m^3)" = iestrella_hr$p2,
                    "AQI (US AQI)" = iestrella_hr$p01,
@@ -334,15 +334,15 @@ server <- function(input, output) {
     )
     plot6<- ggplotly(ggplot(iestrella_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2))+
-      ylab(paste0(input$var1))+
+      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2a))+
+      ylab(paste0(input$var2a))+
       xlab("Datetime")+
       theme_minimal()+ 
       theme(plot.title = element_text(face = "bold", size = 18))+
       theme(axis.text=element_text(size=14),axis.title=element_text(size=14,face="bold")))
   })
   output$plot2c <- renderPlotly({
-    yvar <- switch(input$var3,
+    yvar <- switch(input$var3a,
                    "PM10 (ug/m^3)" = oestrella$p1,
                    "PM2.5 (ug/m^3)" = oestrella$p2,
                    "AQI (US AQI)" = oestrella$p01,
@@ -352,15 +352,15 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(oestrella, aes(x=datetime, y=yvar))+
       geom_point(color = "red")+
-      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3))+
-      ylab(paste0(input$var1))+
+      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3a))+
+      ylab(paste0(input$var3a))+
       xlab("Datetime")+
       theme_minimal()+ 
       theme(plot.title = element_text(face = "bold", size = 18))+
       theme(axis.text=element_text(size=14),axis.title=element_text(size=14,face="bold")))
   })
   output$plot2d <- renderPlotly({
-    yvar <- switch(input$var4,
+    yvar <- switch(input$var4a,
                    "PM10 (ug/m^3)" = iestrella$p1,
                    "PM2.5 (ug/m^3)" = iestrella$p2,
                    "AQI (US AQI)" = iestrella$p01,
@@ -370,8 +370,8 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(iestrella, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4))+
-      ylab(paste0(input$var1))+
+      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4a))+
+      ylab(paste0(input$var4a))+
       xlab("Datetime")+
       theme_minimal()+ 
       theme(plot.title = element_text(face = "bold", size = 18))+
