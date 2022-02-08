@@ -1,10 +1,10 @@
-install.packages("shinythemes")
-install.packages("ggplot2")
-install.packages("shiny")
-install.packages("stringr")
-install.packages("leaflet")
-install.packages("plotly")
-install.packages("DT")
+#install.packages("shinythemes")
+#install.packages("ggplot2")
+#install.packages("shiny")
+#install.packages("stringr")
+#install.packages("leaflet")
+#install.packages("plotly")
+#install.packages("DT")
 
 library(shinythemes)
 library(ggplot2)
@@ -55,25 +55,25 @@ ui <-
                                    sidebarPanel(
                                      
                                    selectInput("var1", 
-                                                 label = "Plot A",
+                                                 label = "Hourly Outdoor",
                                                  choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                              "AQI (US AQI)","Temp (degrees F)",
                                                              "CO2 (ppm)","Humidity (%)"), 
                                                  selected = "PM2.5"),
                                      selectInput("var2", 
-                                                 label = "Plot B",
+                                                 label = "Hourly Indoor",
                                                  choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                              "AQI (US AQI)","Temp (degrees F)",
                                                              "CO2 (ppm)","Humidity (%)"), 
                                                  selected = "PM2.5"),
                                      selectInput("var3", 
-                                                 label = "Plot C",
+                                                 label = "15-min Outdoor",
                                                  choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                              "AQI (US AQI)","Temp (degrees F)",
                                                              "CO2 (ppm)","Humidity (%)"), 
                                                  selected = "PM2.5"),
                                      selectInput("var4", 
-                                                 label = "Plot D",
+                                                 label = "15-min Indoor",
                                                  choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                              "AQI (US AQI)","Temp (degrees F)",
                                                              "CO2 (ppm)","Humidity (%)"), 
@@ -129,25 +129,25 @@ ui <-
                                      sidebarLayout(
                                        sidebarPanel(
                                          selectInput("var1a", 
-                                                     label = "Plot A",
+                                                     label = "Hourly Outdoor",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
                                          selectInput("var2a", 
-                                                     label = "Plot B",
+                                                     label = "Hourly Indoor",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
                                          selectInput("var3a", 
-                                                     label = "Plot C",
+                                                     label = "15-min Outdoor",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
                                                      selected = "PM2.5"),
                                          selectInput("var4a", 
-                                                     label = "Plot D",
+                                                     label = "15-min Indoor",
                                                      choices = c("PM10 (ug/m^3)","PM2.5 (ug/m^3)",
                                                                  "AQI (US AQI)","Temp (degrees F)",
                                                                  "CO2 (ppm)","Humidity (%)"), 
