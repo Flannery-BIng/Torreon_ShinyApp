@@ -1,10 +1,4 @@
-install.packages("shinythemes")
-install.packages("ggplot2")
-install.packages("shiny")
-install.packages("stringr")
-install.packages("leaflet")
-install.packages("plotly")
-install.packages("DT")
+
 
 library(shinythemes)
 library(ggplot2)
