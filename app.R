@@ -230,7 +230,7 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(ozona_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot A: ", "Hourly Outdoor ", input$var1))+
+      ggtitle(paste0("Hourly Outdoor ", input$var1))+
       ylab(paste0(input$var1))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -248,7 +248,7 @@ server <- function(input, output) {
     )
     plot2<- ggplotly(ggplot(izona_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2))+
+      ggtitle(paste0("Hourly Indoor ", input$var2))+
       ylab(paste0(input$var2))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -266,7 +266,7 @@ server <- function(input, output) {
     )
     plot3<- ggplotly(ggplot(ozona, aes(x=datetime, y=yvar))+
       geom_point(color = "red")+
-      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3))+
+      ggtitle(paste0("Instant Outdoor ", input$var3))+
       ylab(paste0(input$var3))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -284,7 +284,7 @@ server <- function(input, output) {
     )
     plot4<- ggplotly(ggplot(izona, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4))+
+      ggtitle(paste0("Instant Indoor ", input$var4))+
       ylab(paste0(input$var4))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -323,7 +323,7 @@ server <- function(input, output) {
     )
     plot5<- ggplotly(ggplot(oestrella_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot A: ", "Hourly Outdoor ", input$var1a))+
+      ggtitle(paste0("Hourly Outdoor ", input$var1a))+
       ylab(paste0(input$var1a))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -341,7 +341,7 @@ server <- function(input, output) {
     )
     plot6<- ggplotly(ggplot(iestrella_hr, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot B: ","Hourly Indoor ", input$var2a))+
+      ggtitle(paste0("Hourly Indoor ", input$var2a))+
       ylab(paste0(input$var2a))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -359,7 +359,7 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(oestrella, aes(x=datetime, y=yvar))+
       geom_point(color = "red")+
-      ggtitle(paste0("Plot C: ","Instant Outdoor ", input$var3a))+
+      ggtitle(paste0("Instant Outdoor ", input$var3a))+
       ylab(paste0(input$var3a))+
       xlab("Datetime")+
       theme_minimal()+ 
@@ -377,7 +377,7 @@ server <- function(input, output) {
     )
     plot1<- ggplotly(ggplot(iestrella, aes(x=datetime, y=yvar))+ 
       geom_point(color = "red")+
-      ggtitle(paste0("Plot D: ","Instant Indoor ", input$var4a))+
+      ggtitle(paste0("Instant Indoor ", input$var4a))+
       ylab(paste0(input$var4a))+
       xlab("Datetime")+
       theme_minimal()+ 
