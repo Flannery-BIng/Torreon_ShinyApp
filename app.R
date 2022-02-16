@@ -39,7 +39,7 @@ ui <-
                             strong("(c) Humidity (%)"), br(),
                             strong("(d) CO2 (ppm)"),br(),
                             style="text-align:justify;color:black;background-color:light blue;padding:15px;border-radius:10px;font-size:18px"),
-                          p("Please note that this is",strong("raw data"),"And has not been QC'd, so there may be outliers. We aim to update these plots weekly.",style="text-align:center;color:black;background-color:light blue;padding:15px;border-radius:10px;font-size:20px"),
+                          p("Please note that this is",strong("raw data"),"and has not been QC'd, so there may be outliers. We aim to update these plots weekly.",style="text-align:center;color:black;background-color:light blue;padding:15px;border-radius:10px;font-size:20px"),
                           br(),
                           br(),
                           p("Explore the tabs at the top to get started!", 
