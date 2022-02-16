@@ -256,8 +256,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = ozona_hr$PM1,
                    "CO2 (ppm)" = ozona_hr$CO2,
                    "Humidity (%)" = ozona_hr$Humidity,
-                   "Temp (Fahrenheit)" = ozona_hr$TEMP.Fahrenheit,
-                   "Temp (Celsius)" = ozona_hr$TEMP.Celsius
+                   "Temp (Fahrenheit)" = ozona_hr$Temp.Fahrenheit,
+                   "Temp (Celsius)" = ozona_hr$Temp.Celsius
     )
     plot1<- ggplotly(ggplot(ozona_hr, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
@@ -275,8 +275,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = izona_hr$PM1,
                    "CO2 (ppm)" = izona_hr$CO2,
                    "Humidity (%)" = izona_hr$Humidity,
-                   "Temp (Fahrenheit)" = izona_hr$TEMP.Fahrenheit,
-                   "Temp (Celsius)" = izona_hr$TEMP.Celsius
+                   "Temp (Fahrenheit)" = izona_hr$Temp.Fahrenheit,
+                   "Temp (Celsius)" = izona_hr$Temp.Celsius
     )
     plot2<- ggplotly(ggplot(izona_hr, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
@@ -294,8 +294,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = ozona$p01,
                    "CO2 (ppm)" = ozona$co,
                    "Humidity (%)" = ozona$hm,
-                   "Temp (degrees F)" = ozona$tp,
-                   "Temp (degrees C)" = ozona$tp_C
+                   "Temp (Fahrenheit)" = ozona$tp,
+                   "Temp (Celsius)" = ozona$tp_C
     )
     plot3<- ggplotly(ggplot(ozona, aes(x=datetime, y=yvar))+
                        geom_point(color = "red")+
@@ -313,8 +313,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = izona$p01,
                    "CO2 (ppm)" = izona$co,
                    "Humidity (%)" = izona$hm,
-                   "Temp (degrees F)" = izona$tp,
-                   "Temp (degrees C)" = izona$tp_C
+                   "Temp (Fahrenheit)" = izona$tp,
+                   "Temp (Celsius)" = izona$tp_C
     )
     plot4<- ggplotly(ggplot(izona, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
@@ -353,8 +353,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = oestrella_hr$PM1,
                    "CO2 (ppm)" = oestrella_hr$CO2,
                    "Humidity (%)" = oestrella_hr$Humidity,
-                   "Temp (Fahrenheit)" = oestrella_hr$TEMP.Fahrenheit,
-                   "Temp (Celsius)" = oestrella_hr$TEMP.Celsius
+                   "Temp (Fahrenheit)" = oestrella_hr$Temp.Fahrenheit,
+                   "Temp (Celsius)" = oestrella_hr$Temp.Celsius
     )
     plot5<- ggplotly(ggplot(oestrella_hr, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
@@ -372,8 +372,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = iestrella_hr$PM1,
                    "CO2 (ppm)" = iestrella_hr$CO2,
                    "Humidity (%)" = iestrella_hr$Humidity,
-                   "Temp (Fahrenheit)" = iestrella_hr$TEMP.Fahrenheit,
-                   "Temp (Celsius)" = iestrella_hr$TEMP.Celsius
+                   "Temp (Fahrenheit)" = iestrella_hr$Temp.Fahrenheit,
+                   "Temp (Celsius)" = iestrella_hr$Temp.Celsius
     )
     plot6<- ggplotly(ggplot(iestrella_hr, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
@@ -391,8 +391,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = oestrella$p01,
                    "CO2 (ppm)" = oestrella$co,
                    "Humidity (%)" = oestrella$hm,
-                   "Temp (degrees F)" = oestrella$tp,
-                   "Temp (degrees C)" = oestrella$tp_C
+                   "Temp (Fahrenheit)" = oestrella$tp,
+                   "Temp (Celsius)" = oestrella$tp_C
     )
     plot1<- ggplotly(ggplot(oestrella, aes(x=datetime, y=yvar))+
                        geom_point(color = "red")+
@@ -410,8 +410,8 @@ server <- function(input, output) {
                    "PM1 (ug/m^3)" = iestrella$p01,
                    "CO2 (ppm)" = iestrella$co,
                    "Humidity (%)" = iestrella$hm,
-                   "Temp (degrees F)" = iestrella$tp,
-                   "Temp (degrees C)" = iestrella$tp_C
+                   "Temp (Fahrenheit" = iestrella$tp,
+                   "Temp (Celsius)" = iestrella$tp_C
     )
     plot1<- ggplotly(ggplot(iestrella, aes(x=datetime, y=yvar))+ 
                        geom_point(color = "red")+
