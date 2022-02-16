@@ -8,14 +8,14 @@ library(stringr)
 library(leaflet)
 library(plotly)
 library(DT)
-ozona_hr <- readRDS("data/hourly_outside_zona_finalTue_Feb_15.rds")
-ozona <- readRDS("data/instant_outside_zona_finalTue_Feb_15.rds")
-izona_hr <- readRDS("data/hourly_inside_zona_finalTue_Feb_15.rds")
-izona <- readRDS("data/instant_inside_zona_finalTue_Feb_15.rds")
-oestrella_hr <- readRDS("data/hourly_outside_estrella_finalTue_Feb_15.rds")
-oestrella <- readRDS("data/instant_outside_estrella_finalTue_Feb_15.rds")
-iestrella_hr <- readRDS("data/hourly_inside_estrella_finalTue_Feb_15.rds")
-iestrella <- readRDS("data/instant_inside_estrella_finalTue_Feb_15.rds")
+ozona_hr <- readRDS("data/hourly_outside_zona_finalWed_Feb_16.rds")
+ozona <- readRDS("data/instant_outside_zona_finalWed_Feb_16.rds")
+izona_hr <- readRDS("data/hourly_inside_zona_finalWed_Feb_16.rds")
+izona <- readRDS("data/instant_inside_zona_finalWed_Feb_16.rds")
+oestrella_hr <- readRDS("data/hourly_outside_estrella_finalWed_Feb_16.rds")
+oestrella <- readRDS("data/instant_outside_estrella_finalWed_Feb_16.rds")
+iestrella_hr <- readRDS("data/hourly_inside_estrella_finalWed_Feb_16.rds")
+iestrella <- readRDS("data/instant_inside_estrella_finalWed_Feb_16.rds")
 
 # User interface ----
 ui <-
@@ -50,7 +50,7 @@ ui <-
                         br(),
                         br(),
                         br(),
-                        p(strong("Last Updated: February 15, 2022"),style="text-align:center;font-size:16px")
+                        p(strong("Last Updated: February 16, 2022"),style="text-align:center;font-size:16px")
                         ),
                       
                       hr()
